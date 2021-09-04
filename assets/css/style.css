@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Special+Elite&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* general element styling*/
+
+body {
+    background: #FCBA04;
+    color: #250001;
+    font-family: 'Josefin Slab', sans-serif;
+}
+
+h1 {
+    font-family: 'Special Elite';
+}
+
