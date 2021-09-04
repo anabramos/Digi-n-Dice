@@ -12,9 +12,14 @@ body {
     background: #FCBA04;
     color: #250001;
     font-family: 'Josefin Slab', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 h1 {
     font-family: 'Special Elite';
+    background: #590004;
+    color: #FCBA04;
+    letter-spacing: 2px;
+    padding: 3px;
 }
-
