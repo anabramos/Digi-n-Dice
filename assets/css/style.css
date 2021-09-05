@@ -62,6 +62,10 @@ header , footer {
     background: #FCBA04;
 }
 
+.box-shadow {
+    box-shadow: 3px 3px #A50104;
+}
+
 /*fixed sizing styles*/
 
 .height-90vh {
