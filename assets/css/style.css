@@ -16,12 +16,12 @@ body {
     font-weight: 400;
 }
 
-h1 {
+header , footer {
     font-family: 'Special Elite';
     background: #590004;
     color: #FCBA04;
     letter-spacing: 2px;
-    padding: 3px;
+    padding: 10px;
 }
 
 .main-container {
