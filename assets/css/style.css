@@ -24,6 +24,10 @@ header , footer {
     padding: 10px;
 }
 
+img {
+    margin: 50px auto;
+}
+
 /* general class styling */
 
 .main-container {
@@ -64,6 +68,10 @@ header , footer {
 
 .box-shadow {
     box-shadow: 3px 3px #A50104;
+}
+
+.hidden {
+    display: none;
 }
 
 /*fixed sizing styles*/
