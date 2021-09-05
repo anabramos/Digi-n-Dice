@@ -13,3 +13,9 @@
     let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     document.getElementById("quoteBox").innerHTML = randomQuote;
 });
+
+ let initiativeRoll = getElementById("rollInitiative")
+ initiativeRoll.addEventListener("click" , function() {
+
+
+ })
