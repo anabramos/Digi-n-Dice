@@ -18,5 +18,10 @@
  initiativeRoll.addEventListener("click" , function() {
     let diceRoll = Math.floor(Math.random() * 20) + 1;
     let initiativeModifier = document.getElementById("modifier").valueAsNumber;
-    document.getElementById("initiative").innerHTML = diceRoll + initiativeModifier;
+
+        if (isNaN(initiativeModifier)) {
+            document.getElementById("initiative").innerHTML = "Please add your initiative modifier"
+        } else {
+            document.getElementById("initiative").innerHTML = diceRoll + initiativeModifier;
+        }
  });
