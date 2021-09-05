@@ -52,17 +52,11 @@
     ]
 
     if (yourInitiative <= 0) {
-        document.getElementById("ResultGif").setAttribute("src", "assets/images/gifs/-0.gif");
+        document.getElementById("resultGif").setAttribute("src", "assets/images/gifs/-0.gif");
     } else if (yourInitiative >= 1 && yourInitiative <= 19) {
-        document.getElementById("ResultGif").setAttribute("src", gifs[yourInitiative]);
+        document.getElementById("resultGif").setAttribute("src", gifs[yourInitiative]);
     } else if (yourInitiative >= 20){
-        document.getElementById("ResultGif").setAttribute("src", "assets/images/gifs/20.gif");
+        document.getElementById("resultGif").setAttribute("src", "assets/images/gifs/20.gif");
     }
 
 });
-
-//if (yourInitiative == 1) {
-//} else if (yourInitiative == 1) {
-
-
-
