@@ -9,7 +9,7 @@
         "Things we say that will always start a fight: Roll for initiative" ,
         "I don't take initiative, I roll it!"
     ]
-
+    
     let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     document.getElementById("quoteBox").innerHTML = randomQuote;
 });
@@ -19,10 +19,50 @@
      
     let diceRoll = Math.floor(Math.random() * 20) + 1;
     let initiativeModifier = document.getElementById("modifier").valueAsNumber;
+    let yourInitiative = diceRoll + initiativeModifier
 
         if (isNaN(initiativeModifier)) {
             document.getElementById("initiative").innerHTML = "Please add your initiative modifier"
         } else {
-            document.getElementById("initiative").innerHTML = diceRoll + initiativeModifier;
+            document.getElementById("initiative").innerHTML = yourInitiative;
         }
- });
+
+        let gifs = [
+        "assets/images/gifs/-0.gif",
+        "assets/images/gifs/1.gif",
+        "assets/images/gifs/2.gif",
+        "assets/images/gifs/3.gif",
+        "assets/images/gifs/4-5.gif",
+        "assets/images/gifs/4-5.gif" ,
+        "assets/images/gifs/6-7.gif",
+        "assets/images/gifs/6-7.gif" ,
+        "assets/images/gifs/8-9.gif",
+        "assets/images/gifs/8-9.gif" ,
+        "assets/images/gifs/10-11.gif",
+        "assets/images/gifs/10-11.gif",
+        "assets/images/gifs/12-13.gif" ,
+        "assets/images/gifs/12-13.gif" ,
+        "assets/images/gifs/14.gif" ,
+        "assets/images/gifs/15.gif" ,
+        "assets/images/gifs/16.gif" ,
+        "assets/images/gifs/17-18.gif" ,
+        "assets/images/gifs/17-18.gif" ,
+        "assets/images/gifs/19.gif" ,
+        "assets/images/gifs/20.gif"
+    ]
+
+    if (yourInitiative <= 0) {
+        document.getElementById("ResultGif").setAttribute("src", "assets/images/gifs/-0.gif");
+    } else if (yourInitiative >= 1 && yourInitiative <= 19) {
+        document.getElementById("ResultGif").setAttribute("src", gifs[yourInitiative]);
+    } else if (yourInitiative >= 20){
+        document.getElementById("ResultGif").setAttribute("src", "assets/images/gifs/20.gif");
+    }
+
+});
+
+//if (yourInitiative == 1) {
+//} else if (yourInitiative == 1) {
+
+
+
