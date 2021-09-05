@@ -1,11 +1,6 @@
  /* Wait for DOM to finish loading to start quotes*/
 
  document.addEventListener("DOMContentLoaded" , function() {
-    
-    let form = document.getElementById("diceForm");
-    form.addEventListener("submit" , function(event){
-        event.preventDefault();
-    });
 
     let quotes = [
         "When someone attacks one party member we all roll for initiative" ,
