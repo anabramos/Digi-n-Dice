@@ -2,6 +2,11 @@
 
  document.addEventListener("DOMContentLoaded" , function() {
     
+    let form = document.getElementById("diceForm");
+    form.addEventListener("submit" , function(event){
+        event.preventDefault();
+    });
+
     let quotes = [
         "When someone attacks one party member we all roll for initiative" ,
         "If you come any closer you'll have to roll initiative" ,
@@ -14,8 +19,8 @@
     document.getElementById("quoteBox").innerHTML = randomQuote;
 });
 
- let initiativeRoll = getElementById("rollInitiative")
+ let initiativeRoll = document.getElementById("rollInitiative");
  initiativeRoll.addEventListener("click" , function() {
-
-
+    let diceRoll = Math.floor(Math.random() * 20) + 1;
+    document.getElementById("initiative").innerHTML = diceRoll;
  })
