@@ -24,8 +24,19 @@ h1 {
     padding: 3px;
 }
 
-#quote {
-    margin: 50px auto;
+.main-container {
+    margin: auto;
     width: 60%;
-    font-size: 2.6rem;
+    text-align: center;
+}
+
+.sub-container {
+    padding: 40px 0;
+    font-size: 1.6rem;
+}
+
+/*fixed sizing styles*/
+
+.height-90vh {
+    min-height: 90vh;
 }
