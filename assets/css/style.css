@@ -9,8 +9,8 @@
 /* general element styling*/
 
 body {
-    background: #FCBA04;
-    color: #250001;
+    background: #590004;
+    color: #FCBA04;
     font-family: 'Josefin Slab', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -18,8 +18,8 @@ body {
 
 header , footer {
     font-family: 'Special Elite';
-    background: #590004;
-    color: #FCBA04;
+    background: #FCBA04;
+    color: #590004 ;
     letter-spacing: 2px;
     padding: 10px;
 }
@@ -30,6 +30,7 @@ header , footer {
     margin: auto;
     width: 60%;
     text-align: center;
+    padding: 20px;
 }
 
 .sub-container {
@@ -39,6 +40,26 @@ header , footer {
 
 .sub-container h3 , .sub-container p {
     margin: 20px;
+}
+
+.text-dark-sienna {
+    color: #250001;
+}
+
+.text-selective-yellow {
+    color: #FCBA04;
+}
+
+.text-rufous {
+    color: #590004;
+}
+
+.background-dark-sienna {
+    background: #250001;
+}
+
+.background-selective-yellow {
+    background: #FCBA04;
 }
 
 /*fixed sizing styles*/
