@@ -24,6 +24,8 @@ header , footer {
     padding: 10px;
 }
 
+/* general class styling */
+
 .main-container {
     margin: auto;
     width: 60%;
@@ -35,8 +37,13 @@ header , footer {
     font-size: 1.6rem;
 }
 
+.sub-container h3 , .sub-container p {
+    margin: 20px;
+}
+
 /*fixed sizing styles*/
 
 .height-90vh {
     min-height: 90vh;
 }
+
