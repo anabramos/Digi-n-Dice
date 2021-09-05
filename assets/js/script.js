@@ -17,6 +17,6 @@
  let initiativeRoll = document.getElementById("rollInitiative");
  initiativeRoll.addEventListener("click" , function() {
     let diceRoll = Math.floor(Math.random() * 20) + 1;
-    let initiativeModifier = document.getElementById("modifier").value
+    let initiativeModifier = document.getElementById("modifier").valueAsNumber;
     document.getElementById("initiative").innerHTML = diceRoll + initiativeModifier;
  });
