@@ -10,8 +10,6 @@
         "I don't take initiative, I roll it!"
     ]
 
-    for (let i = 0; i <= quotes.length; i++){
-        console.log(quotes[i]);
-    }
-   
- });
+    let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById("quoteBox").innerHTML = randomQuote;
+});
