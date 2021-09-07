@@ -1,5 +1,4 @@
- /* Wait for DOM to finish loading to start quotes*/
-
+ // Wait for DOM to finish loading to start quotes
  document.addEventListener("DOMContentLoaded" , function() {
 
     let quotes = [
@@ -10,10 +9,12 @@
         "I don't take initiative, I roll it!"
     ]
     
+    // Display one random quote from the 'quotes' array
     let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     document.getElementById("quoteBox").innerHTML = randomQuote;
 });
 
+// Wait for the click event to roll a d20 and return a random number
  let initiativeRoll = document.getElementById("rollInitiative");
  initiativeRoll.addEventListener("click" , function() {
      
@@ -21,6 +22,8 @@
     let initiativeModifier = document.getElementById("modifier").valueAsNumber;
     let yourInitiative = diceRoll + initiativeModifier
 
+        // Display message if user does not add an initiative modifier
+        // Else, sum the random d20 roll with the initiative modifier
         if (isNaN(initiativeModifier)) {
             document.getElementById("initiative").innerHTML = "Please add your initiative modifier"
         } else {
@@ -50,7 +53,7 @@
         "assets/images/gifs/19.gif" ,
         "assets/images/gifs/20.gif"
     ]
-
+    // Based on your initiative, display the corresponding gif
     if (yourInitiative <= 0) {
         document.getElementById("resultGif").setAttribute("src", "assets/images/gifs/-0.gif");
     } else if (yourInitiative >= 1 && yourInitiative <= 19) {
