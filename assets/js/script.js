@@ -25,10 +25,11 @@
         // Display message if user does not add an initiative modifier
         // Else, sum the random d20 roll with the initiative modifier
         if (isNaN(initiativeModifier)) {
-            document.getElementById("initiative").innerHTML = "Please add your initiative modifier"
+            document.getElementById("initiative").innerHTML = "Please add your initiative modifier";
         } else {
             document.getElementById("initiative").innerHTML = yourInitiative;
-            document.getElementById("initiative").setAttribute("class", "number-big")
+            document.getElementById("initiative").setAttribute("class", "number-big");
+            document.getElementById("history-box").classList.remove("hidden");
         }
 
         let gifs = [
