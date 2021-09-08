@@ -28,6 +28,7 @@
             document.getElementById("initiative").innerHTML = "Please add your initiative modifier"
         } else {
             document.getElementById("initiative").innerHTML = yourInitiative;
+            document.getElementById("initiative").setAttribute("class", "number-big")
         }
 
         let gifs = [

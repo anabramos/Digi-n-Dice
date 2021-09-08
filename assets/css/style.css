@@ -104,3 +104,10 @@ button:hover {
     text-align: center;
     outline: none;
 }
+
+/* initiative output styling */
+
+.number-big {
+    font-size: 4.0rem;
+    font-weight: bold;
+}
