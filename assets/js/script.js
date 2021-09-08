@@ -30,7 +30,17 @@
             document.getElementById("initiative").innerHTML = yourInitiative;
             document.getElementById("initiative").setAttribute("class", "number-big");
             document.getElementById("history-box").classList.remove("hidden");
-            document.getElementById("initiative-history").innerHTML = yourInitiative;
+
+            // Create a initiative log history
+            let initiativeHistory = [];
+            let initiatives = yourInitiative + ", ";
+
+            let li = document.createElement("li");
+            document.getElementById("initiative-history-list").appendChild(li);
+
+            initiativeHistory.push(initiatives);
+            li.textContent += initiativeHistory[initiativeHistory.length - 1];
+
         }
 
         let gifs = [
@@ -66,3 +76,5 @@
     }
 
 });
+
+
