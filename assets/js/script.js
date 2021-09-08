@@ -30,6 +30,7 @@
             document.getElementById("initiative").innerHTML = yourInitiative;
             document.getElementById("initiative").setAttribute("class", "number-big");
             document.getElementById("history-box").classList.remove("hidden");
+            document.getElementById("initiative-history").innerHTML = yourInitiative;
         }
 
         let gifs = [
