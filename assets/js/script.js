@@ -9,17 +9,18 @@
         "I don't take initiative, I roll it!"
     ]
     
-    // Select one random quote from the 'quotes' array
-    let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        // Select one random quote from the 'quotes' array
+        //let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-    // Display selected quote inside h2 element
-    function loadRandomQuote() {
-        document.getElementById("quoteBox").innerHTML = randomQuote;
-   }
-    // it excutes after 3sec
-   setInterval(function() {
-        loadRandomQuote(); 
-     },3000);
+        // Display selected quote inside h2 element
+        function loadRandomQuote() {
+            let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quoteBox").innerHTML = randomQuote;
+        }
+        // it excutes after 3sec
+        setInterval(function() {
+            loadRandomQuote(); 
+        },3000);
 
 });
 
