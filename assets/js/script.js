@@ -9,9 +9,18 @@
         "I don't take initiative, I roll it!"
     ]
     
-    // Display one random quote from the 'quotes' array
+    // Select one random quote from the 'quotes' array
     let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    document.getElementById("quoteBox").innerHTML = randomQuote;
+
+    // Display selected quote inside h2 element
+    function loadRandomQuote() {
+        document.getElementById("quoteBox").innerHTML = randomQuote;
+   }
+    // it excutes after 3sec
+   setInterval(function() {
+        loadRandomQuote(); 
+     },3000);
+
 });
 
 // Wait for the click event to roll a d20 and return a random number
@@ -40,7 +49,6 @@
 
             initiativeHistory.push(initiatives);
             li.textContent += initiativeHistory[initiativeHistory.length - 1];
-
         }
 
         let gifs = [
