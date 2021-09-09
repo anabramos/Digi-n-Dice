@@ -32,6 +32,7 @@
     let initiativeModifier = document.getElementById("modifier").valueAsNumber;
     let yourInitiative = diceRoll + initiativeModifier
     let initiativeHistory = [];
+
         // Display message if user does not add an initiative modifier
         // Else, sum the random d20 roll with the initiative modifier
         if (isNaN(initiativeModifier)) {
