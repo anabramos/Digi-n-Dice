@@ -49,6 +49,15 @@
 
             initiativeHistory.push(initiatives);
             li.textContent += initiativeHistory[initiativeHistory.length - 1];
+
+            let listLenght = document.getElementById("initiative-history-list").getElementsByTagName("li").length;
+            console.log(listLenght);
+            
+            if (listLenght > 10){
+                document.getElementById("initiative-history-list").removeChild(list.lastElementChild)
+            }
+
+            
         }
 
         let gifs = [
