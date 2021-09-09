@@ -31,7 +31,7 @@
     let diceRoll = Math.floor(Math.random() * 20) + 1;
     let initiativeModifier = document.getElementById("modifier").valueAsNumber;
     let yourInitiative = diceRoll + initiativeModifier
-
+    let initiativeHistory = [];
         // Display message if user does not add an initiative modifier
         // Else, sum the random d20 roll with the initiative modifier
         if (isNaN(initiativeModifier)) {
@@ -42,14 +42,16 @@
             document.getElementById("history-box").classList.remove("hidden");
 
             // Create a initiative log history
-            let initiativeHistory = [];
             let initiatives = yourInitiative + ", ";
-
             let li = document.createElement("li");
-            document.getElementById("initiative-history-list").appendChild(li);
+            document.getElementById("initiative-history-list").prepend(li);
 
             initiativeHistory.push(initiatives);
             li.textContent += initiativeHistory[initiativeHistory.length - 1];
+
+            if (initiativeHistory.length > 8) {
+                initiativeHistory.shift();
+            }
         }
 
         let gifs = [
