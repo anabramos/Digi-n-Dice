@@ -45,18 +45,18 @@
             // Create a initiative log history
             let initiatives = yourInitiative + ", ";
             let li = document.createElement("li");
-            document.getElementById("initiative-history-list").prepend(li);
+            let list = document.getElementById("initiative-history-list")
+            list.prepend(li);
 
             initiativeHistory.push(initiatives);
             li.textContent += initiativeHistory[initiativeHistory.length - 1];
 
-            let listLenght = document.getElementById("initiative-history-list").getElementsByTagName("li").length;
+            let listLenght = list.getElementsByTagName("li").length;
             console.log(listLenght);
-            
-            if (listLenght > 10){
-                document.getElementById("initiative-history-list").removeChild(list.lastElementChild)
-            }
 
+            if (listLenght > 10){
+                list.removeChild(list.lastElementChild);
+            }
             
         }
 
