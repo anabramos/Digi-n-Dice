@@ -36,6 +36,11 @@ ol {
     padding: 10px;
 }
 
+#initiative-history-list li:first-child {
+    color: #A50104;
+    font-weight: bold;
+}
+
 /* general class styling */
 
 .main-container {

@@ -48,10 +48,6 @@
 
             initiativeHistory.push(initiatives);
             li.textContent += initiativeHistory[initiativeHistory.length - 1];
-
-            if (initiativeHistory.length > 8) {
-                initiativeHistory.shift();
-            }
         }
 
         let gifs = [
