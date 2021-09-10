@@ -32,3 +32,8 @@ Link to live website: !!!
 
 - Footer 
     - The footer credits the creator of the website. 
+
+### Features to be implemented
+
+- Implement an API for quote and gif generators
+- Expand the dice roll beyond initiative rolls (d20) to include also d4, d6, d8, d10, and d12.
