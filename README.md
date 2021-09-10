@@ -66,3 +66,26 @@ Link to live website: !!!
 
 - Gifs
     - All gifs for this project were taken from [GIPHY](https://giphy.com/). 
+
+## Technologies Used
+
+- Languages
+    - [HTML5](https://en.wikipedia.org/wiki/HTML)
+    - [CSS](https://en.wikipedia.org/wiki/CSS)
+    - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+- Libraries & Frameworks
+    - [Google Fonts](https://fonts.google.com/)
+    - [Font Awesome](https://fontawesome.com/)
+
+- Tools
+    - [Gitpod](https://www.gitpod.io/)
+    - [Github](https://github.com/)
+    - [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/)
+    - [Coolors (color schemes generator)](https://coolors.co/)
+    - [GIPHY](https://giphy.com/)
+    - [W3C HTML Validation Service](https://validator.w3.org/)
+    - [W3C CSS Validation Service](https://validator.w3.org/)
+    - [Am I Responsive?](http://ami.responsivedesign.is/)
+    - [WebAIM](https://webaim.org/resources/contrastchecker/)
+    
