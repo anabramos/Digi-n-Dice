@@ -150,6 +150,7 @@ button:hover {
         display: block;
         width: 100%;
         margin: auto 0;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -163,7 +164,4 @@ button:hover {
     img {
         display: none;
     }
-}
-
-@media screen and (max-width: 480px) {
 }
