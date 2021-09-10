@@ -142,19 +142,14 @@ button:hover {
 }
 
 /* For screen sizes from 1024px wide or smaller*/
-@media screen and (max-width: 1024px){
-}
 
 @media screen and (max-width: 900px){
     .sub-container {
-        display: block;
         width: 100%;
         margin: auto 0;
     }
 }
 
-@media screen and (max-width: 768px){
-}
 
 @media screen and (max-width: 560px) {
     #quote-container{
