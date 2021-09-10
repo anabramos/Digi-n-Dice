@@ -36,6 +36,11 @@ ol {
     padding: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: #590004 ;
+}
+
 #initiative-history-list li:first-child {
     color: #A50104;
     font-weight: bold;
