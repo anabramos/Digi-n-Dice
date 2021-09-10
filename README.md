@@ -50,3 +50,19 @@ Link to live website: !!!
 
 - The color pallet and contrast for the website was tested on [WebAIM](https://webaim.org/resources/contrastchecker/)
 - The website has been tested on lighthouse for accessibility. 
+
+## Design
+
+- Colors
+    - The website colors are inspired by D&D Fire dragons. It uses different shades of red and dark red with yellow details to create contrast between text and background.
+
+        <img src="assets/images/design/my-colors.png" style="width: 60%" style="height: 120px">
+
+- Fonts
+    - The website uses a combination of Josefin Slab and Special Elite fonts, with a fall back to sans-serif. These fonts are popularly paired together. Special Elite is used in the website for high-level headings while Josefin Slab is used for regular text and low level headings. The fonts were compared and taken from [Google Fonts](https://fonts.google.com/).
+
+- Icons
+    - This website makes use of icons from [Font Awesome](https://fontawesome.com/) to give a new visual element and reference existing imagery from Dungeons and Dragons. The Icons are used to indicate the purpose of the website.
+
+- Gifs
+    - All gifs for this project were taken from [GIPHY](https://giphy.com/). 
