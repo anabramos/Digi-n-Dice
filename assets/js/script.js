@@ -9,51 +9,49 @@
         "I don't take initiative, I roll it!"
     ]
     
-        // Select one random quote from the 'quotes' array
-        //let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    // Select one random quote from the 'quotes' array and display selected quote inside h2 element
+    function loadRandomQuote() {
+        let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById("quoteBox").innerHTML = randomQuote;
+    }
 
-        // Display selected quote inside h2 element
-        function loadRandomQuote() {
-            let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-            document.getElementById("quoteBox").innerHTML = randomQuote;
-        }
-        // it excutes after 3sec
-        setInterval(function() {
-            loadRandomQuote(); 
-        },3000);
-
+    // Excute this function every 3sec
+    setInterval(function() {
+        loadRandomQuote(); 
+    },3000);
 });
 
-// Wait for the click event to roll a d20 and return a random number
+// Wait for the click event to roll for initiative
  let initiativeRoll = document.getElementById("rollInitiative");
  initiativeRoll.addEventListener("click" , function() {
      
-    let diceRoll = Math.floor(Math.random() * 20) + 1;
-    let initiativeModifier = document.getElementById("modifier").valueAsNumber;
-    let yourInitiative = diceRoll + initiativeModifier
-    let initiativeHistory = [];
+    let diceRoll = Math.floor(Math.random() * 20) + 1; //returns a random number between 1 - 20
+    let initiativeModifier = document.getElementById("modifier").valueAsNumber; // identify initiative modifier
+    let yourInitiative = diceRoll + initiativeModifier // sum the random d20 roll with the initiative modifier
+    
+    let initiativeHistory = [];//creates an empty array for the initiative history
 
         // Display message if user does not add an initiative modifier
-        // Else, sum the random d20 roll with the initiative modifier
         if (isNaN(initiativeModifier)) {
             document.getElementById("initiative").innerHTML = "Please add your initiative modifier";
-        } else {
-            document.getElementById("initiative").innerHTML = yourInitiative;
-            document.getElementById("initiative").setAttribute("class", "number-big");
-            document.getElementById("history-box").classList.remove("hidden");
+        } else { 
+            document.getElementById("initiative").innerHTML = yourInitiative; // Display initiative value  
+            document.getElementById("initiative").setAttribute("class", "number-big"); // Style initiative value  
+            document.getElementById("history-box").classList.remove("hidden"); // Display initiative history box  
 
             // Create a initiative log history
             let initiatives = yourInitiative + ", ";
             let li = document.createElement("li");
             let list = document.getElementById("initiative-history-list")
-            list.prepend(li);
+            list.prepend(li); // add a new list item to the end of the list 
 
-            initiativeHistory.push(initiatives);
+            initiativeHistory.push(initiatives); // add initiative to initiativeHistory array
             li.textContent += initiativeHistory[initiativeHistory.length - 1];
 
             let listLenght = list.getElementsByTagName("li").length;
-            console.log(listLenght);
+            console.log(listLenght); // Log amount of initiative rolls into console
 
+            //Remove the earlier initiative rolls from history after 10 rolls
             if (listLenght > 10){
                 list.removeChild(list.lastElementChild);
             }
