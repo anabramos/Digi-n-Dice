@@ -150,7 +150,6 @@ button:hover {
     }
 }
 
-
 @media screen and (max-width: 560px) {
     #quote-container{
         display: none;
