@@ -158,4 +158,8 @@ button:hover {
     img {
         display: none;
     }
+
+    body{
+        font-size: 1.0rem;
+    }
 }
