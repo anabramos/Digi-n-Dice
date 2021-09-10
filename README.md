@@ -37,3 +37,8 @@ Link to live website: !!!
 
 - Implement an API for quote and gif generators
 - Expand the dice roll beyond initiative rolls (d20) to include also d4, d6, d8, d10, and d12.
+
+### Accessibility
+
+- The color pallet and contrast for the website was tested on [WebAIM](https://webaim.org/resources/contrastchecker/)
+- The website has been tested on lighthouse for accessibility. 
