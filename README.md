@@ -21,8 +21,8 @@ Link to live website: !!!
     - When the user clicks on the dice roll button having added a valid initiative modifier value, they will receive as a response the total initiative value of their roll. 
 
 - Initiative history section
-    - The initiative history section will log the results of a user's initiative rolls up until a max. of 10 rolls. 
-    - After 10 rolls, for every new dice roll the latest logged initiatives will be deleted, giving room for the newest one. 
+    - The initiative history section will log the results of a user's initiative rolls up until a max. of 7 rolls. 
+    - After 7 rolls, for every new dice roll the latest logged initiatives will be deleted, giving room for the newest one. 
 
 - Initiative triggered gif section
     - Another interactive feature of Digi & Dice is the gif display triggered by the initiative value rolled.
