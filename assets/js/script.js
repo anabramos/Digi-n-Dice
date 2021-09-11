@@ -6,7 +6,11 @@
         "If you come any closer you'll have to roll initiative" ,
         "Who needs gender roles when we can have initiative rolls" , 
         "Things we say that will always start a fight: Roll for initiative" ,
-        "I don't take initiative, I roll it!"
+        "I don't take initiative, I roll it!" ,
+        "Welcome to my neighbourhood. Roll for initiative" , 
+        "The players just went into a dark alley. Roll initiative" , 
+        "The party settling down for a rest....'Roll for initiative'" , 
+        "When you just walked into an empty room and the DM says: 'Roll for initiative...'"
     ];
     
     // Select one random quote from the 'quotes' array and display selected quote inside h2 element
@@ -81,7 +85,7 @@
         "assets/images/gifs/19.gif" ,
         "assets/images/gifs/20.gif"
     ];
-    
+
     // Based on your initiative, display the corresponding gif
     if (yourInitiative <= 0) {
         document.getElementById("resultGif").setAttribute("src", "assets/images/gifs/-0.gif");
