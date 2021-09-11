@@ -90,6 +90,18 @@ During a game friends of mine tested the website in their own mobiles, laptops, 
 - Initiative history section
     - Issue reported with the way in which the initiative history is logged, which was displayed in line and not very transparent in regards to the dice roll. Changes to address this issue were implemented by displaying the initiative history log in a list format and presenting the entire calculation rather than just the initiative number. 
 
+    ### Bugs
+While building Digi & Dice, many things were not working as expected. Some bugs I encountered were:
+
+- When building the quotes section I used the setInterval() method to display a random quote every 3 seconds after the loading of the DOM. Initially I could see the placeholder welcome text would change to a quote after 3 seconds, but this would then stay on as the only displayed quote. This happened because the randomQuote variable had been defined outside the function (and therefore was out of scope), and it was returningg the already defined random quote. By introducing this variable inside the loadRandomQuote() function I was able to fix the bug and make a new random quote appear every 3 seconds. 
+
+- When uusing javascript to get the value of the elemebt with id = "modifier" this was returning as a string value and therefore was printing the sum of the dice roll and initiative modifier one after the other. Example: dice roll = 15 and initiative modifier = 3, the sum was logging 153. To fix this I have used the .valueAsNumber property.
+
+- My HTML code was not passing the W3C validation because my img tag had no src attribute, which was because there was a condition in my javascript document that would add a src to the tag based on the initiative that was rolled. To avoid having errors in this situation I have created a square image with same color backkground as the website so that this is the initiatinal src attibute of the img tag while still looking like the page is empty. 
+
+- Because I have made use of the 'click' event listener I have not used a submit button. but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
+
+
 ### Validator Testing
 
 - HTML
