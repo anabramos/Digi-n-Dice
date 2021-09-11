@@ -26,7 +26,7 @@
 });
 
 // Wait for the click event to roll for initiative
- let initiativeRoll = document.getElementById("rollInitiative");
+ let initiativeRoll = document.getElementById("roll-initiative");
  initiativeRoll.addEventListener("click" , function() {
      
     let diceRoll = Math.floor(Math.random() * 20) + 1; //returns a random number between 1 - 20
@@ -87,11 +87,11 @@
 
     // Based on your initiative, display the corresponding gif
     if (yourInitiative <= 0) {
-        document.getElementById("resultGif").setAttribute("src", "assets/images/gifs/-0.gif");
+        document.getElementById("result-gif").setAttribute("src", "assets/images/gifs/-0.gif");
     } else if (yourInitiative >= 1 && yourInitiative <= 19) {
-        document.getElementById("resultGif").setAttribute("src", gifs[yourInitiative]);
+        document.getElementById("result-gif").setAttribute("src", gifs[yourInitiative]);
     } else if (yourInitiative >= 20){
-        document.getElementById("resultGif").setAttribute("src", "assets/images/gifs/20.gif");
+        document.getElementById("result-gif").setAttribute("src", "assets/images/gifs/20.gif");
     }
 
 });
