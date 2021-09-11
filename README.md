@@ -48,6 +48,9 @@ Link to live website: !!!
 - CSS
     - No errors or warnings returned from the [W3C CSS Validator Service](https://jigsaw.w3.org/css-validator/)
 
+- Javascript
+    - No errors, warnings or bugs returned from the [JSHint](https://jshint.com/)
+
 ### Accessibility
 
 - The color pallet and contrast for the website was tested on [WebAIM](https://webaim.org/resources/contrastchecker/)
