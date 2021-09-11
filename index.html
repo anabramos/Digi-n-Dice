@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Online initiative roller dice for Dungeons & Dragons players">
-    <meta name="keywords" content="initiative roll, d20, dungeons and dragons">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Online initiative roller dice for Dungeons & Dragons players">
+        <meta name="keywords" content="initiative roll, d20, dungeons and dragons">
 
-    <!--favicon link-->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!--favicon link-->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <!--css styling link-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Digi&Dice</title>
-</head>
-<body>
-    <!--header & logo-->
-    <header>
-        <a href="index.html"><h1>Digi <i class="fab fa-d-and-d"></i> Dice</h1></a>
-    </header> 
+        <!--css styling link-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Digi&Dice</title>
+    </head>
+    <body>
+        <!--header & logo-->
+        <header>
+            <a href="index.html"><h1>Digi <i class="fab fa-d-and-d"></i> Dice</h1></a>
+        </header> 
 
-    <div class="height-90vh main-container">
+        <div class="height-90vh main-container">
+            
+            <!--quote section-->
+            <section id="quote-container">
+                <h2 id="quoteBox">Welcome to Digi <i class="fab fa-d-and-d"></i> Dice</h2>
+            </section>
+            
+            <!--dice roll section-->
+            <section class="sub-container width-40 text-dark-sienna background-selective-yellow box-shadow">
 
-        <section id="quote-container">
-            <h2 id="quoteBox">Welcome to Digi <i class="fab fa-d-and-d"></i> Dice</h2>
-        </section>
-   
-        <section class="sub-container width-40 text-dark-sienna background-selective-yellow box-shadow">
+                <div>
+                    <h3><i class="fas fa-dice-d20"></i> Roll Initiative <i class="fas fa-dice-d20"></i></h3>
+                </div>
+            
+                <div>
+                    <label for="modifier"></label>
+                    <input id="modifier" type="number" placeholder="Modifier"/>
+                    <button id="rollInitiative">Roll</button>
+                </div>
 
-            <div>
-                <h3><i class="fas fa-dice-d20"></i> Roll Initiative <i class="fas fa-dice-d20"></i></h3>
-            </div>
-        
-            <div>
-                <label for="modifier"></label>
-                <input id="modifier" type="number" placeholder="Modifier"/>
-                <button id="rollInitiative">Roll</button>
-            </div>
+                <div>
+                    <p id="initiative"></p>
+                </div>
+            </section>
 
-            <div>
-                <p id="initiative"></p>
-            </div>
+            <!--initiative history section-->
+            <section id ="history-box" class="sub-container width-40 text-dark-sienna background-selective-yellow box-shadow hidden">
+                <p>Your initiative history:</p>
+                <ol id="initiative-history-list"></ol>
+            </section>
 
-        </section>
-
-        <section id ="history-box" class="sub-container width-40 text-dark-sienna background-selective-yellow box-shadow hidden">
-            <p>Your initiative history:</p>
-            <ol id="initiative-history-list"></ol>
-        </section>
-
-        <section>
-            <img id="resultGif" src="assets/images/background-square.png" alt="gif that makes reference to a speed based on the initiative rolled by the user"/>
-        </section>
-    </div>
-
-    <!--footer-->
-    <footer>
-        <div>
-            <p id="footer-desktop">© 2021 AwesomeAnaWebDevelopment</p>
-            <p id="footer-mobile">© 2021 AAWebDevelopment</p>
+            <!--gif section-->
+            <section>
+                <img id="resultGif" src="assets/images/background-square.png" alt="gif that makes reference to a speed based on the initiative rolled by the user"/>
+            </section>
         </div>
-    </footer>
 
-    <!--javascript script-->
-    <script src="assets/js/script.js"></script>
+        <!--footer-->
+        <footer>
+            <div>
+                <p id="footer-desktop">© 2021 AwesomeAnaWebDevelopment</p>
+                <p id="footer-mobile">© 2021 AAWebDevelopment</p>
+            </div>
+        </footer>
 
-    <!--font awesome script-->
-    <script src="https://kit.fontawesome.com/b690598c3f.js" crossorigin="anonymous"></script>
-</body>
+        <!--javascript script-->
+        <script src="assets/js/script.js"></script>
+
+        <!--font awesome script-->
+        <script src="https://kit.fontawesome.com/b690598c3f.js" crossorigin="anonymous"></script>
+    </body>
 </html>
