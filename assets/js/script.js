@@ -52,7 +52,7 @@
             console.log(listLenght); // Log amount of initiative rolls into console
 
             //Remove the earlier initiative rolls from history after 10 rolls
-            if (listLenght > 10){
+            if (listLenght > 7){
                 list.removeChild(list.lastElementChild);
             }
             
