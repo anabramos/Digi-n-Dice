@@ -156,7 +156,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 620px) {
     #quote-container{
         display: none;
     }
@@ -164,7 +164,9 @@ button:hover {
     img {
         display: none;
     }
+}
 
+@media screen and (max-width: 560px) {
     footer , header{
         font-size: 1.0rem;
     }
