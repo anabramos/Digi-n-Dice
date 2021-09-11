@@ -169,6 +169,20 @@ The website was deployed using GitHub Pages. For that, the following steps were 
     - [GIPHY](https://giphy.com/)
     - [W3C HTML Validation Service](https://validator.w3.org/)
     - [W3C CSS Validation Service](https://validator.w3.org/)
+    - [JSHint](https://jshint.com/)
     - [Am I Responsive?](http://ami.responsivedesign.is/)
     - [WebAIM](https://webaim.org/resources/contrastchecker/)
     
+## Credits
+
+- Content
+     
+    - All code for this project was written by myself: Ana Ramos Barretto.
+
+- Media
+
+    - All gifs for this website were taken from [GIPHY](https://giphy.com/).
+
+## Acknowledgements
+
+A huge thanks to my mentor Samantha Dartnall, the CI slack community and tutoring team, my party the Erasmus Eradicators and DM who tested the website during our last game. 
