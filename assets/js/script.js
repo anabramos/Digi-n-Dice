@@ -1,5 +1,5 @@
- // Wait for DOM to finish loading to start quotes
- document.addEventListener("DOMContentLoaded" , function() {
+// Wait for DOM to finish loading to start quotes
+document.addEventListener("DOMContentLoaded" , function() {
 
     let quotes = [
         "When someone attacks one party member we all roll for initiative" ,
@@ -26,8 +26,8 @@
 });
 
 // Wait for the click event to roll for initiative
- let initiativeRoll = document.getElementById("roll-initiative");
- initiativeRoll.addEventListener("click" , function() {
+let initiativeRoll = document.getElementById("roll-initiative");
+initiativeRoll.addEventListener("click" , function() {
      
     let diceRoll = Math.floor(Math.random() * 20) + 1; //returns a random number between 1 - 20
     let initiativeModifier = document.getElementById("modifier").valueAsNumber; // identify initiative modifier
@@ -61,7 +61,7 @@
             }
         }
 
-        let gifs = [
+    let gifs = [
         "assets/images/gifs/-0.gif",
         "assets/images/gifs/1.gif",
         "assets/images/gifs/2.gif",
