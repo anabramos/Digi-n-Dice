@@ -59,7 +59,6 @@
             if (listLenght > 7){
                 list.removeChild(list.lastElementChild);
             }
-            
         }
 
         let gifs = [

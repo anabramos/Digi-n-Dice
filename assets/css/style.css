@@ -180,4 +180,8 @@ button:hover {
     #footer-desktop {
         display: none;
     }
+
+    .sub-container h3 {
+        font-size: 1.0em;
+    }
 }
