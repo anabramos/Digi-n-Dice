@@ -172,7 +172,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 390px){
     #footer-mobile {
         display:block;
     }
