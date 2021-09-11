@@ -44,6 +44,52 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
 - Implement an API for quote and gif generators
 - Expand the dice roll beyond initiative rolls (d20) to include also d4, d6, d8, d10, and d12.
 
+## Testing
+
+### Component level Testing
+
+- Compatibility & Responsiveness
+    - The website was tested and it is working on different browsers: Google Chrome, Firefox, and Microsoft Edge.
+    - Tested on different devices using Chrome DevTools and other available from myself and friends. 
+    - The website is responsive on screen widths from 2560px to 320px.
+
+- Header/Logo
+    - The internal link in the logo is working and opening the home page as desired.
+
+- Quote section
+    - The quote section is working and displaying a random quote every 3 seconds. 
+
+- Modifier input field
+    - The modifier input field is working and will only accept number inputs.
+    - The modifier input field is required, which means if the user does not fill in the calculation for initiative will not happen and the user will receive a message requiring to do so.
+
+- Roll dice button
+    - The button is working and providing the correct output based on the calculation it does.
+    - When the button is clicked, it will trigger 3 things:
+        - Display an initiative number or a request for the user to provide an initiative modifier;
+        - Display the calculation of the initiative in the 'initiative history box' on the top of the list, with distinct style;
+        - Display a gif that corresponds with the initiative number rolled. 
+
+- Initiative history container
+    - All initiatives rolled are being logged properly into the container, including being added to the top of the list in different styling.
+    - The sum between the dice roll and initiative modifier is working correctly. 
+
+### User level Testing
+During a game friends of mine tested the website in their own mobiles, laptops, etc. 
+
+ - Overall Navigation 
+    - No issues reported.
+
+- Website Responsiveness
+    - Issue reported with horizontal scrolling caused by the footer content. Changes to address this issue were implemented by giving the footer a different content in smaller screen sizes. 
+    - Issue reported with gifs that were either displaying in line with other containers or below it. Changes to address this issue were implemented by adding different styling to the div holding the gifs section.
+
+- Dice roll section
+    - No issues reported.
+
+- Initiative history section
+    - Issue reported with the way in which the initiative history is logged, which was displayed in line and not very transparent in regards to the dice roll. Changes to address this issue were implemented by displaying the initiative history log in a list format and presenting the entire calculation rather than just the initiative number. 
+
 ### Validator Testing
 
 - HTML
