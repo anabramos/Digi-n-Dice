@@ -128,7 +128,13 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
 
 - The color pallet and contrast for the website was tested on [WebAIM](https://webaim.org/resources/contrastchecker/)
 - The website has been tested on lighthouse for accessibility.
- 
+    - Desktop
+
+    <img src="assets/images/design/lighthouse-desktop.png" style="width: 60%">
+
+    - Mobile
+    
+    <img src="assets/images/design/lighthouse-mobile.png" style="width: 60%">
 
 ## Deployment
 
