@@ -13,7 +13,8 @@ Link to live website: !!!
     - The Digi & Dice logo also functions as an anchor link to the homepage.
 
 - Quote section
-    - As part of the interactivity of the page, the user will find a variety of quotes related to D&D coming back every 3 seconds to engage them with the website and attract their interest. 
+    - As part of the interactivity of the page, the user will find a variety of quotes related to D&D coming back every 3 seconds to engage them with the website and attract their interest.
+    - This feature is disabled for side-bar and mobile mode (screens with max-width of 620px).
 
 - Initiative dice roll section
     - The dice roll functionality is build so that users can include their initiative modifiers and the initiative roll will calculate the sum of these two values. 
@@ -29,6 +30,7 @@ Link to live website: !!!
     - For lower initiative values (initiative < 7) the section will display gifs that translate the slowliness of the action.
     - For medium initiative values (initiative > 7 && initiative < 13) the section will display gifs that translate the medium pace of the action.
     - For high initiative values (initiative > 13) the section will display gifs that translate the speediness of the action.
+    - This feature is disabled for side-bar and mobile mode (screens with max-width of 620px). 
 
 - Footer 
     - The footer credits the creator of the website. 
