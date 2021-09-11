@@ -14,7 +14,7 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
 
 - Header & logo
     - The header is situated at the top of the page, with the logo of the Digi & Dice to the left. The logo brings the distinct dragon in the shape of the & that can be recognized by all true D&D players. 
-    - The Digi & Dice logo also functions as an anchor link to the homepage.
+    - The Digi & Dice logo also functions as an anchor link to the homepage in case the user wishes to refresh/restrat/load the page again.
     
     <img src="assets/images/design/header.png" style="width: 60%">
 
@@ -133,7 +133,7 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
     <img src="assets/images/design/lighthouse-desktop.png" style="width: 60%">
 
     - Mobile
-    
+
     <img src="assets/images/design/lighthouse-mobile.png" style="width: 60%">
 
 ## Deployment
