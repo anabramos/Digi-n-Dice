@@ -101,7 +101,6 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
 
 - Because I have made use of the 'click' event listener I have not used a submit button. but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
 
-
 ### Validator Testing
 
 - HTML
@@ -117,6 +116,23 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
 
 - The color pallet and contrast for the website was tested on [WebAIM](https://webaim.org/resources/contrastchecker/)
 - The website has been tested on lighthouse for accessibility. 
+
+## Deployment
+
+The website was deployed using GitHub Pages. For that, the following steps were taken:
+1. From the GitHub repository page go to 'Settings'.
+2. From 'Settings', scroll until the 'GitHub Pages' section.
+3. At the 'GitHub Pages' section open the dedicated GitHub Pages tab by clicking on the link.
+4. In the new tab select the main branch using the dropdown menu and click 'Save'.
+5. A link will be provided where the website is now published.
+
+    * After deployment the live website link was avaliable at most defices from friends, colleagues and CI community members but not on my own computer. After consulting tutor support and research on stack overflow, I made an empty commit (which was reccommended) and then the website became available again.
+
+- Forking
+    - To use this project as a reference or starting point, or even to propose changes to it, you can fork this repository by following these steps: 
+        1. From the GitHub repository page click on 'Fork' in the top-right corner.
+        2. Create a new repository with a new name based on this project. 
+        3. Make sure to credit the project in case you decide to use any of the original code.
 
 ## Design
 
