@@ -28,6 +28,10 @@ img {
     margin: 50px auto;
 }
 
+li {
+    list-style-type: none;
+}
+
 ol {
     padding: 10px;
 }
