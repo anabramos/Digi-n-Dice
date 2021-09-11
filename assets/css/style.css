@@ -103,6 +103,12 @@ a {
     display: none;
 }
 
+/* general id styling */
+
+#footer-mobile {
+    display: none;
+}
+
 /*fixed sizing styles*/
 
 .height-90vh {
@@ -161,5 +167,15 @@ button:hover {
 
     footer , header{
         font-size: 1.0rem;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #footer-mobile {
+        display:block;
+    }
+
+    #footer-desktop {
+        display: none;
     }
 }
