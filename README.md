@@ -12,32 +12,44 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
 
 ## Features
 
-- Navigation Bar
-    - The navigation bar is situated at the top of the page, with the logo of the Digi & Dice to the left. The logo brings the distinct dragon in the shape of the & that can be recognized by all true D&D players. 
+- Header & logo
+    - The header is situated at the top of the page, with the logo of the Digi & Dice to the left. The logo brings the distinct dragon in the shape of the & that can be recognized by all true D&D players. 
     - The Digi & Dice logo also functions as an anchor link to the homepage.
+    
+    <img src="assets/images/design/header.png" style="width: 60%">
 
 - Quote section
     - As part of the interactivity of the page, the user will find a variety of quotes related to D&D coming back every 3 seconds to engage them with the website and attract their interest.
     - This feature is disabled for side-bar and mobile mode (screens with max-width of 620px).
+    
+    <img src="assets/images/design/quote-section.png" style="width: 60%">
 
 - Initiative dice roll section
     - The dice roll functionality is build so that users can include their initiative modifiers and the initiative roll will calculate the sum of these two values. 
     - If no initiative modifier is provided when performing a dice roll, the user will receive as a result a reminder to add its modifier. 
     - When the user clicks on the dice roll button having added a valid initiative modifier value, they will receive as a response the total initiative value of their roll. 
+    
+    <img src="assets/images/design/dice-roll-section.png" style="width: 60%">
 
 - Initiative history section
     - The initiative history section will log the results of a user's initiative rolls up until a max. of 7 rolls. 
-    - After 7 rolls, for every new dice roll the latest logged initiatives will be deleted, giving room for the newest one. 
-
+    - After 7 rolls, for every new dice roll the latest logged initiatives will be deleted, giving room for the newest one.
+    
+    <img src="assets/images/design/initiative-history.png" style="width: 60%">
+ 
 - Initiative triggered gif section
     - Another interactive feature of Digi & Dice is the gif display triggered by the initiative value rolled.
     - For lower initiative values (initiative < 7) the section will display gifs that translate the slowliness of the action.
     - For medium initiative values (initiative > 7 && initiative < 13) the section will display gifs that translate the medium pace of the action.
     - For high initiative values (initiative > 13) the section will display gifs that translate the speediness of the action.
-    - This feature is disabled for side-bar and mobile mode (screens with max-width of 620px). 
+    - This feature is disabled for side-bar and mobile mode (screens with max-width of 620px).
+    
+    <img src="assets/images/design/gif-section.png" style="width: 40%">
 
 - Footer 
-    - The footer credits the creator of the website. 
+    - The footer credits the creator of the website.
+
+    <img src="assets/images/design/footer.png" style="width: 60%">
 
 ### Features to be implemented
 
@@ -93,13 +105,13 @@ During a game friends of mine tested the website in their own mobiles, laptops, 
     ### Bugs
 While building Digi & Dice, many things were not working as expected. Some bugs I encountered were:
 
-- When building the quotes section I used the setInterval() method to display a random quote every 3 seconds after the loading of the DOM. Initially I could see the placeholder welcome text would change to a quote after 3 seconds, but this would then stay on as the only displayed quote. This happened because the randomQuote variable had been defined outside the function (and therefore was out of scope), and it was returningg the already defined random quote. By introducing this variable inside the loadRandomQuote() function I was able to fix the bug and make a new random quote appear every 3 seconds. 
+    - When building the quotes section I used the setInterval() method to display a random quote every 3 seconds after the loading of the DOM. Initially I could see the placeholder welcome text would change to a quote after 3 seconds, but this would then stay on as the only displayed quote. This happened because the randomQuote variable had been defined outside the function (and therefore was out of scope), and it was returningg the already defined random quote. By introducing this variable inside the loadRandomQuote() function I was able to fix the bug and make a new random quote appear every 3 seconds. 
 
-- When uusing javascript to get the value of the elemebt with id = "modifier" this was returning as a string value and therefore was printing the sum of the dice roll and initiative modifier one after the other. Example: dice roll = 15 and initiative modifier = 3, the sum was logging 153. To fix this I have used the .valueAsNumber property.
+    - When uusing javascript to get the value of the elemebt with id = "modifier" this was returning as a string value and therefore was printing the sum of the dice roll and initiative modifier one after the other. Example: dice roll = 15 and initiative modifier = 3, the sum was logging 153. To fix this I have used the .valueAsNumber property.
 
-- My HTML code was not passing the W3C validation because my img tag had no src attribute, which was because there was a condition in my javascript document that would add a src to the tag based on the initiative that was rolled. To avoid having errors in this situation I have created a square image with same color backkground as the website so that this is the initiatinal src attibute of the img tag while still looking like the page is empty. 
+    - My HTML code was not passing the W3C validation because my img tag had no src attribute, which was because there was a condition in my javascript document that would add a src to the tag based on the initiative that was rolled. To avoid having errors in this situation I have created a square image with same color backkground as the website so that this is the initiatinal src attibute of the img tag while still looking like the page is empty. 
 
-- Because I have made use of the 'click' event listener I have not used a submit button. but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
+    - Because I have made use of the 'click' event listener I have not used a submit button. but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
 
 ### Validator Testing
 
@@ -115,7 +127,8 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
 ### Accessibility
 
 - The color pallet and contrast for the website was tested on [WebAIM](https://webaim.org/resources/contrastchecker/)
-- The website has been tested on lighthouse for accessibility. 
+- The website has been tested on lighthouse for accessibility.
+ 
 
 ## Deployment
 
