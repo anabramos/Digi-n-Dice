@@ -40,7 +40,7 @@
             document.getElementById("history-box").classList.remove("hidden"); // Display initiative history box  
 
             // Create a initiative log history
-            let initiatives = yourInitiative + ", ";
+            let initiatives = yourInitiative + "= d" + diceRoll + "+" + initiativeModifier + ", ";
             let li = document.createElement("li");
             let list = document.getElementById("initiative-history-list")
             list.prepend(li); // add a new list item to the end of the list 
