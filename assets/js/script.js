@@ -7,7 +7,7 @@
         "Who needs gender roles when we can have initiative rolls" , 
         "Things we say that will always start a fight: Roll for initiative" ,
         "I don't take initiative, I roll it!"
-    ]
+    ];
     
     // Select one random quote from the 'quotes' array and display selected quote inside h2 element
     function loadRandomQuote() {
@@ -27,7 +27,7 @@
      
     let diceRoll = Math.floor(Math.random() * 20) + 1; //returns a random number between 1 - 20
     let initiativeModifier = document.getElementById("modifier").valueAsNumber; // identify initiative modifier
-    let yourInitiative = diceRoll + initiativeModifier // sum the random d20 roll with the initiative modifier
+    let yourInitiative = diceRoll + initiativeModifier; // sum the random d20 roll with the initiative modifier
     
     let initiativeHistory = [];//creates an empty array for the initiative history
 
@@ -42,7 +42,7 @@
             // Create a initiative log history
             let initiatives = yourInitiative + "= d" + diceRoll + "+" + initiativeModifier + ", ";
             let li = document.createElement("li");
-            let list = document.getElementById("initiative-history-list")
+            let list = document.getElementById("initiative-history-list");
             list.prepend(li); // add a new list item to the end of the list 
 
             initiativeHistory.push(initiatives); // add initiative to initiativeHistory array
@@ -80,7 +80,8 @@
         "assets/images/gifs/17-18.gif" ,
         "assets/images/gifs/19.gif" ,
         "assets/images/gifs/20.gif"
-    ]
+    ];
+    
     // Based on your initiative, display the corresponding gif
     if (yourInitiative <= 0) {
         document.getElementById("resultGif").setAttribute("src", "assets/images/gifs/-0.gif");
