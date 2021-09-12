@@ -18,6 +18,7 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
     * [Component level Testing](#component-level-testing)
     * [User level Testing](#user-level-testing)
     * [Bugs](#bugs)
+        * [Known Issues](#known-issues)
     * [Validator Testing](#validator-testing)
     * [Accessibility](#accessibility)
 - [Deployment](#deployment)
@@ -173,6 +174,12 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
 - My HTML code was not passing the W3C validation because my img tag had no src attribute, which was because there was a condition in my JavaScript document that would add a src to the tag based on the initiative that was rolled. To avoid having errors in this situation I have created a square image with same color background  as the website so that this is the initial src attribute of the img tag while still looking like the page is empty. 
 
 - Because I have made use of the 'click' event listener I have not used a submit type button, but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
+
+    <a name="known-issues"></a>
+
+    #### Known issues
+
+    - On Mozila Firefox the initiative history container creates a bigger top margin gap in comparison with the roll dice box container, making one box taller than the other. This however does not impact the functionality of the website and main features.
 
 <a name="validator-testing"></a>
 
