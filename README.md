@@ -10,6 +10,24 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
 
 <img src="assets/images/design/am-i-responsive.png" style="width: 60%" />
 
+## Table of Contents
+- [Features](#features)
+    * [Features to be Implemented](#features-to-be-implemented)
+- [User Experience (UX)](#user-experience-ux)
+- [Testing](#testing)
+    * [Component level Testing](#component-level-testing)
+    * [User level Testing](#user-level-testing)
+    * [Bugs](#bugs)
+    * [Validator Testing](#validator-testing)
+    * [Accessibility](#accessibility)
+- [Deployment](#deployment)
+- [Design](#design)
+- [Technologies Used](#technologies-used)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+
+<a name="features"></a>
+
 ## Features
 
 - Header & logo
@@ -52,10 +70,14 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
 
     <img src="assets/images/design/footer.png" style="width: 60%">
 
+<a name="features-to-be-implemented"></a>
+
 ### Features to be implemented
 
 - Implement an API for quote and gif generators
 - Expand the dice roll beyond initiative rolls (d20) to include also d4, d6, d8, d10, and d12.
+
+<a name="user-experience-ux"></a>
 
 ## User Experience (UX)
 The user experience for the website is built with 2 personas in mind. Each persona presents a different user story and different goals when accessing the website. 
@@ -87,7 +109,11 @@ The user experience for the website is built with 2 personas in mind. Each perso
     - Attract D&D entusiasts to make use of the website.
     - Create an interactive and fun experience for group parties using the website.
 
+<a name="testing"></a>
+
 ## Testing
+
+<a name="component-level-testing"></a>
 
 ### Component level Testing
 
@@ -117,6 +143,8 @@ The user experience for the website is built with 2 personas in mind. Each perso
     - All initiatives rolled are being logged properly into the container, including being added to the top of the list in different styling.
     - The sum between the dice roll and initiative modifier is working correctly. 
 
+<a name="user-level-testing"></a>
+
 ### User level Testing
 During a game friends of mine tested the website in their own mobiles, laptops, etc. 
 
@@ -133,16 +161,20 @@ During a game friends of mine tested the website in their own mobiles, laptops, 
 - Initiative history section
     - Issue reported with the way in which the initiative history is logged, which was displayed in line and not very transparent in regards to the dice roll. Changes to address this issue were implemented by displaying the initiative history log in a list format and presenting the entire calculation rather than just the initiative number. 
 
-    ### Bugs
+<a name="bugs"></a>
+
+### Bugs
 While building Digi & Dice, many things were not working as expected. Some bugs I encountered were:
 
-    - When building the quotes section I used the setInterval() method to display a random quote every 3 seconds after the loading of the DOM. Initially I could see the placeholder welcome text would change to a quote after 3 seconds, but this would then stay on as the only displayed quote. This happened because the randomQuote variable had been defined outside the function (and therefore was out of scope), and it was returningg the already defined random quote. By introducing this variable inside the loadRandomQuote() function I was able to fix the bug and make a new random quote appear every 3 seconds. 
+- When building the quotes section I used the setInterval() method to display a random quote every 3 seconds after the loading of the DOM. Initially I could see the placeholder welcome text would change to a quote after 3 seconds, but this would then stay on as the only displayed quote. This happened because the randomQuote variable had been defined outside the function (and therefore was out of scope), and it was returningg the already defined random quote. By introducing this variable inside the loadRandomQuote() function I was able to fix the bug and make a new random quote appear every 3 seconds. 
 
-    - When uusing javascript to get the value of the elemebt with id = "modifier" this was returning as a string value and therefore was printing the sum of the dice roll and initiative modifier one after the other. Example: dice roll = 15 and initiative modifier = 3, the sum was logging 153. To fix this I have used the .valueAsNumber property.
+- When uusing javascript to get the value of the elemebt with id = "modifier" this was returning as a string value and therefore was printing the sum of the dice roll and initiative modifier one after the other. Example: dice roll = 15 and initiative modifier = 3, the sum was logging 153. To fix this I have used the .valueAsNumber property.
 
-    - My HTML code was not passing the W3C validation because my img tag had no src attribute, which was because there was a condition in my javascript document that would add a src to the tag based on the initiative that was rolled. To avoid having errors in this situation I have created a square image with same color backkground as the website so that this is the initiatinal src attibute of the img tag while still looking like the page is empty. 
+- My HTML code was not passing the W3C validation because my img tag had no src attribute, which was because there was a condition in my javascript document that would add a src to the tag based on the initiative that was rolled. To avoid having errors in this situation I have created a square image with same color backkground as the website so that this is the initiatinal src attibute of the img tag while still looking like the page is empty. 
 
-    - Because I have made use of the 'click' event listener I have not used a submit button. but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
+- Because I have made use of the 'click' event listener I have not used a submit button. but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
+
+<a name="validator-testing"></a>
 
 ### Validator Testing
 
@@ -155,6 +187,8 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
 - Javascript
     - No errors, warnings or bugs returned from the [JSHint](https://jshint.com/)
 
+<a name="accessibility"></a>
+
 ### Accessibility
 
 - The color pallet and contrast for the website was tested on [WebAIM](https://webaim.org/resources/contrastchecker/)
@@ -166,6 +200,8 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
     - Mobile
 
     <img src="assets/images/design/lighthouse-mobile.png" style="width: 60%">
+
+<a name="deployment"></a>
 
 ## Deployment
 
@@ -184,6 +220,8 @@ The website was deployed using GitHub Pages. For that, the following steps were 
         2. Create a new repository with a new name based on this project. 
         3. Make sure to credit the project in case you decide to use any of the original code.
 
+<a name="design"></a>
+
 ## Design
 
 - Colors
@@ -199,6 +237,8 @@ The website was deployed using GitHub Pages. For that, the following steps were 
 
 - Gifs
     - All gifs for this project were taken from [GIPHY](https://giphy.com/). 
+
+<a name="techlonogies-used"></a>
 
 ## Technologies Used
 
@@ -222,7 +262,9 @@ The website was deployed using GitHub Pages. For that, the following steps were 
     - [JSHint](https://jshint.com/)
     - [Am I Responsive?](http://ami.responsivedesign.is/)
     - [WebAIM](https://webaim.org/resources/contrastchecker/)
-    
+
+<a name="credits"></a>
+
 ## Credits
 
 - Content
@@ -232,6 +274,8 @@ The website was deployed using GitHub Pages. For that, the following steps were 
 - Media
 
     - All gifs for this website were taken from [GIPHY](https://giphy.com/).
+
+<a name="acknowledgements"></a>
 
 ## Acknowledgements
 
