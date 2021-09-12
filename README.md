@@ -68,16 +68,20 @@ The user experience for the website is built with 2 personas in mind. Each perso
 - User stories
 
     - A tabletop player:
-        - I 
-        - 
+        - I often play D&D with my party in person around a table.
+        - I want an initiative dice roller that can be used by the whole party.
+        - We need to have the history of initiative rolled up to 5 party members.
+        - We would like to have fun while using the online dice roller.
 
     - An online player:
+        - I often play D&D online
+        - I require a vertical side-bar version of an initiative dice roller only with the most basic features. 
+        - I do not want to have to scroll down on the website to see the results. 
 
     - A new D&D player:
         - I am still getting familiar with the different dice rolls. 
         - I want to use an online dice roller that will clearly state the kind of dice I should be using for a certain action(initiative d20).
-        - 
-
+        - I want to learn from the website what different roll values stand for and how to calculate these values. 
 
 - Digi & Dice goals with the website:
     - Attract D&D entusiasts to make use of the website.
