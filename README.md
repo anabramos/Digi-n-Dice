@@ -31,8 +31,8 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
 ## Features
 
 - Header & logo
-    - The header is situated at the top of the page, with the logo of the Digi & Dice to the left. The logo brings the distinct dragon in the shape of the & that can be recognized by all true D&D players. 
-    - The Digi & Dice logo also functions as an anchor link to the homepage in case the user wishes to refresh/restrat/load the page again.
+    - The header is situated at the top of the page, with the logo of the Digi & Dice to the left. The logo brings the distinct dragon in the shape of the icon & that can be recognized by all true D&D players. 
+    - The Digi & Dice logo also functions as an anchor link to the homepage in case the user wishes to refresh/restart/load the page again.
     
     <img src="assets/images/design/header.png" style="width: 60%">
 
@@ -43,22 +43,22 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
     <img src="assets/images/design/quote-section.png" style="width: 60%">
 
 - Initiative dice roll section
-    - The dice roll functionality is build so that users can include their initiative modifiers and the initiative roll will calculate the sum of these two values. 
+    - The dice roll functionality is built so that users can include their initiative modifiers and the initiative roll will calculate the sum of these two values. 
     - If no initiative modifier is provided when performing a dice roll, the user will receive as a result a reminder to add its modifier. 
     - When the user clicks on the dice roll button having added a valid initiative modifier value, they will receive as a response the already calculated total initiative value of their roll + initiative modifier. 
     
     <img src="assets/images/design/dice-roll-section.png" style="width: 60%">
 
 - Initiative history section
-    - The initiative history section will log the results of a user's initiative rolls up until a max. of 7 rolls. 
+    - The initiative history section will log the results of a user's initiative rolls up until a maximum of 7 rolls. 
     - After 7 rolls, for every new dice roll the latest logged initiatives will be deleted, giving room for the newest one.
-    - This feature allows the user to see their latest rolled initiative specially in cases where you get inspiration, help and/or advantage and need to compare/sum two different rolls.
+    - This feature allows the user to see their latest rolled initiative especially in cases where you get inspiration, help and/or advantage and need to compare/sum two different rolls.
     
     <img src="assets/images/design/initiative-history.png" style="width: 60%">
  
 - Initiative triggered gif section
     - Another interactive feature of Digi & Dice is the gif display triggered by the initiative value rolled.
-    - For lower initiative values (initiative < 7) the section will display gifs that translate the slowliness of the action.
+    - For lower initiative values (initiative < 7) the section will display gifs that translate the slowness of the action.
     - For medium initiative values (initiative > 7 && initiative < 13) the section will display gifs that translate the medium pace of the action.
     - For high initiative values (initiative > 13) the section will display gifs that translate the speediness of the action.
     - This feature is disabled for side-bar and mobile mode (screens with max-width of 620px).
@@ -102,11 +102,11 @@ The user experience for the website is built with 2 personas in mind. Each perso
 
     - A new D&D player:
         - I am still getting familiar with the different dice rolls. 
-        - I want to use an online dice roller that will clearly state the kind of dice I should be using for a certain action(initiative d20).
+        - I want to use an online dice roller that will clearly state the kind of dice I should be using for a certain action (initiative d20).
         - I want to learn from the website what different roll values stand for and how to calculate these values. 
 
 - Digi & Dice goals with the website:
-    - Attract D&D entusiasts to make use of the website.
+    - Attract D&D enthusiasts to make use of the website.
     - Create an interactive and fun experience for group parties using the website.
 
 <a name="testing"></a>
@@ -166,13 +166,13 @@ During a game friends of mine tested the website in their own mobiles, laptops, 
 ### Bugs
 While building Digi & Dice, many things were not working as expected. Some bugs I encountered were:
 
-- When building the quotes section I used the setInterval() method to display a random quote every 3 seconds after the loading of the DOM. Initially I could see the placeholder welcome text would change to a quote after 3 seconds, but this would then stay on as the only displayed quote. This happened because the randomQuote variable had been defined outside the function (and therefore was out of scope), and it was returningg the already defined random quote. By introducing this variable inside the loadRandomQuote() function I was able to fix the bug and make a new random quote appear every 3 seconds. 
+- When building the quotes section I used the setInterval() method to display a random quote every 3 seconds after the loading of the DOM. Initially I could see the placeholder welcome text would change to a quote after 3 seconds, but this would then stay on as the only displayed quote. This happened because the randomQuote variable had been defined outside the function (and therefore was out of scope), and it was returning the already defined random quote. By introducing this variable inside the loadRandomQuote() function I was able to fix the bug and make a new random quote appear every 3 seconds. 
 
-- When uusing javascript to get the value of the elemebt with id = "modifier" this was returning as a string value and therefore was printing the sum of the dice roll and initiative modifier one after the other. Example: dice roll = 15 and initiative modifier = 3, the sum was logging 153. To fix this I have used the .valueAsNumber property.
+- When using JavaScript to get the value of the element with id = "modifier" this was returning as a string value and therefore was printing the sum of the dice roll and initiative modifier one after the other. Example: dice roll = 15 and initiative modifier = 3, the sum was logging 153. To fix this I have used the .valueAsNumber property.
 
-- My HTML code was not passing the W3C validation because my img tag had no src attribute, which was because there was a condition in my javascript document that would add a src to the tag based on the initiative that was rolled. To avoid having errors in this situation I have created a square image with same color backkground as the website so that this is the initiatinal src attibute of the img tag while still looking like the page is empty. 
+- My HTML code was not passing the W3C validation because my img tag had no src attribute, which was because there was a condition in my JavaScript document that would add a src to the tag based on the initiative that was rolled. To avoid having errors in this situation I have created a square image with same color background  as the website so that this is the initial src attribute of the img tag while still looking like the page is empty. 
 
-- Because I have made use of the 'click' event listener I have not used a submit button. but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
+- Because I have made use of the 'click' event listener I have not used a submit type button, but rather just a button. In this case, I was not able to use the required attribute on my modifier input field and therefore decided to create an if/else statement to print a reminder paragraph for users who do not fill in their initiative modifiers.
 
 <a name="validator-testing"></a>
 
@@ -184,7 +184,7 @@ While building Digi & Dice, many things were not working as expected. Some bugs 
 - CSS
     - No errors or warnings returned from the [W3C CSS Validator Service](https://jigsaw.w3.org/css-validator/)
 
-- Javascript
+- JavaScript
     - No errors, warnings or bugs returned from the [JSHint](https://jshint.com/)
 
 <a name="accessibility"></a>
@@ -212,7 +212,7 @@ The website was deployed using GitHub Pages. For that, the following steps were 
 4. In the new tab select the main branch using the dropdown menu and click 'Save'.
 5. A link will be provided where the website is now published.
 
-    * After deployment the live website link was avaliable at most defices from friends, colleagues and CI community members but not on my own computer. After consulting tutor support and research on stack overflow, I made an empty commit (which was reccommended) and then the website became available again.
+    * After deployment the live website link was available at most devices from friends, colleagues and CI community members but not on my own computer. After consulting tutor support and research on stack overflow, I made an empty commit (which was recommended) and then the website became available again.
 
 - Forking
     - To use this project as a reference or starting point, or even to propose changes to it, you can fork this repository by following these steps: 
@@ -238,7 +238,7 @@ The website was deployed using GitHub Pages. For that, the following steps were 
 - Gifs
     - All gifs for this project were taken from [GIPHY](https://giphy.com/). 
 
-<a name="techlonogies-used"></a>
+<a name="technologies-used"></a>
 
 ## Technologies Used
 
