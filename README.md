@@ -27,13 +27,14 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
 - Initiative dice roll section
     - The dice roll functionality is build so that users can include their initiative modifiers and the initiative roll will calculate the sum of these two values. 
     - If no initiative modifier is provided when performing a dice roll, the user will receive as a result a reminder to add its modifier. 
-    - When the user clicks on the dice roll button having added a valid initiative modifier value, they will receive as a response the total initiative value of their roll. 
+    - When the user clicks on the dice roll button having added a valid initiative modifier value, they will receive as a response the already calculated total initiative value of their roll + initiative modifier. 
     
     <img src="assets/images/design/dice-roll-section.png" style="width: 60%">
 
 - Initiative history section
     - The initiative history section will log the results of a user's initiative rolls up until a max. of 7 rolls. 
     - After 7 rolls, for every new dice roll the latest logged initiatives will be deleted, giving room for the newest one.
+    - This feature allows the user to see their latest rolled initiative specially in cases where you get inspiration, help and/or advantage and need to compare/sum two different rolls.
     
     <img src="assets/images/design/initiative-history.png" style="width: 60%">
  
@@ -55,6 +56,32 @@ Link to live website: https://anabramos.github.io/Digi-n-Dice/
 
 - Implement an API for quote and gif generators
 - Expand the dice roll beyond initiative rolls (d20) to include also d4, d6, d8, d10, and d12.
+
+## User Experience (UX)
+The user experience for the website is built with 2 personas in mind. Each persona presents a different user story and different goals when accessing the website. 
+
+- Personas 
+    - Persona 1: Tabletop player.
+    - Persona 2: Online player.
+    - Persona 3: New D&D player
+
+- User stories
+
+    - A tabletop player:
+        - I 
+        - 
+
+    - An online player:
+
+    - A new D&D player:
+        - I am still getting familiar with the different dice rolls. 
+        - I want to use an online dice roller that will clearly state the kind of dice I should be using for a certain action(initiative d20).
+        - 
+
+
+- Digi & Dice goals with the website:
+    - Attract D&D entusiasts to make use of the website.
+    - Create an interactive and fun experience for group parties using the website.
 
 ## Testing
 
